@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from "react";
-import img from "../assets/Images/w1.jpg";
-import img1 from "../assets/Images/w2.jpg";
-import img2 from "../assets/Images/w3.jpg";
-import img3 from "../assets/Images/w4.jpg";
-import img4 from "../assets/Images/w5.jpg";
-import img5 from "../assets/Images/w6.jpg";
+// import img from "../assets/Images/w1.jpg";
+// import img1 from "../assets/Images/w2.jpg";
+// import img2 from "../assets/Images/w3.jpg";
+// import img3 from "../assets/Images/w4.jpg";
+// import img4 from "../assets/Images/w5.jpg";
+// import img5 from "../assets/Images/w6.jpg";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
@@ -82,25 +82,25 @@ const MyWork = () => {
           <div className="relative grid lg:grid-rows-3 lg:grid-cols-3 grid-rows-4 lg:h-[90vh] h-full w-full gap-3">
             <div className="imgCont overflow-hidden">
               <img
-                src={`${img}`}
+                src="/w1.jpg"
                 loading="lazy"
                 className="w-full h-full object-cover hover:scale-125 transition duration-300 ease-in-out"
               />
             </div>
             <div className="imgCont overflow-hidden row-span-2">
-              <img src={`${img1}`} loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
+              <img src="/w2.jpg" loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
             </div>
             <div className="imgCont overflow-hidden lg:row-auto row-span-2 ">
-              <img src={`${img2}`} loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
+              <img src="/w3.jpg" loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
             </div>
             <div className="imgCont overflow-hidden row-span-2">
-              <img src={`${img3}`} loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
+              <img src="/w4.jpg" loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
             </div>
             <div className="imgCont overflow-hidden ">
-              <img src={`${img4}`} loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
+              <img src="/w5.jpg" loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
             </div>
             <div className="imgCont overflow-hidden col-span-2">
-              <img src={`${img5}`} loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
+              <img src="/w6.jpg" loading="lazy" className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out" />
             </div>
           </div>
         </div>

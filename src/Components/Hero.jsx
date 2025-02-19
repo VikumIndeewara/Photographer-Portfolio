@@ -43,11 +43,6 @@ const Hero = () => {
       x: 50,
       opacity: 0,
     });
-    gsap.from(".info", {
-      duration: 2,
-      y: 50,
-      opacity: 0,
-    });
     gsap.from(".btn", {
       duration: 2,
       scale: 0.5,
@@ -56,7 +51,7 @@ const Hero = () => {
     tl.to(".info", {
       y: 50,
       opacity: 0,
-      duration:2,
+      duration:1,
     });
     tl.to(".btn", {
       y: 50,
