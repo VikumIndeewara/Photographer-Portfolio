@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-color: #dfdff0;
+  font-family: "General Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "Wosker";
+  src: url("/src/assets/fonts/Wosker Demo.otf") format("opentype");
+}
+
+
+@layer components {
+  .logo {
+    font-family: wosker;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+    .clip-button {
+      clip-path: polygon(15% 0, 100% 0, 100% 70%, 88% 100%, 0 100%, 0 30%);
+    }
+
+    .clip-full {
+      clip-path: polygon(5% 0, 100% 0, 100% 83%, 94% 100%, 0 100%, 0 20%);
+    }
+
+    .clip-half {
+      clip-path: polygon(4% 0, 100% 0, 100% 80%, 96% 100%, 0 100%, 0 20%);
+    }
+    .clip-mini {
+      clip-path: polygon(5% 0, 100% 0, 100% 75%, 94% 100%, 0 100%, 0 20%);
+    }
+
+    .btn2{
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: #e7dcba;
+      cursor: pointer;
+
+    }
+      .text-stroke-3 {
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+    }
+    
+}
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
