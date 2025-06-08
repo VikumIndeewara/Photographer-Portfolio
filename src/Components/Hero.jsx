@@ -9,52 +9,52 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-  let tl = gsap.timeline({});
-
-  useGSAP(() => {
-    gsap.from(".firstName", {
-      duration: 2,
-      x: -50,
-      opacity: 0,
-    });
-    gsap.from(".lastName", {
-      duration: 2,
-      x: 50,
-      opacity: 0,
-    });
-    gsap.from(".info", {
-      duration: 2,
-      y: 50,
-      opacity: 0,
-    });
-    gsap.from(".btn", {
-      duration: 2,
-      scale: 0.5,
-      opacity: 0,
-    });
-    tl.to(".info", {
-      y: 50,
-      opacity: 0,
-      duration:2,
-    });
-    tl.to(".btn", {
-      y: 50,
-      opacity: 0,
-      duration:2,
-    });
-    tl.to([".backText",".frontText"], {
-      y: 200,
-      duration:6,
-    });
-    ScrollTrigger.create({
-      animation: tl,
+useGSAP(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
       trigger: ".container",
       start: "+=100 top",
       end: "+=500 30%",
-      
-      scrub: 2,
-    });
+      scrub: 5,
+    },
   });
+
+  tl.from(".firstName", {
+    x: -50,
+    opacity: 0,
+    duration: 2,
+  })
+  .from(".lastName", {
+    x: 50,
+    opacity: 0,
+    duration: 2,
+  })
+  .from(".info", {
+    y: 50,
+    opacity: 0,
+    duration: 2,
+  })
+  .from(".btn", {
+    scale: 0.5,
+    opacity: 0,
+    duration: 2,
+  })
+  .to(".info", {
+    y: 50,
+    opacity: 0,
+    duration: 2,
+  })
+  .to(".btn", {
+    y: 50,
+    opacity: 0,
+    duration: 2,
+  })
+  .to([".backText", ".frontText"], {
+    y: 200,
+    duration: 6,
+  });
+});
+
 
   return (
     <div
