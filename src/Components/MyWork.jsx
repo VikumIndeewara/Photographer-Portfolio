@@ -11,16 +11,14 @@ const MyWork = () => {
   const works = ["WEDDINGS", "PRODUCTS", "LANDSCAPES", "FOODS", "EVENTS"];
 
   const images = {
-  WEDDINGS: [img, img1, img2, img3, img4, img5],
-  PRODUCTS: [],
-  LANDSCAPES: [],
-  FOODS: [],
-  EVENTS: []
-};
+    WEDDINGS: [img, img1, img2, img3, img4, img5],
+    PRODUCTS: [],
+    LANDSCAPES: [],
+    FOODS: [],
+    EVENTS: [],
+  };
 
- const selectedWork = images[active] || [];
-
-
+  const selectedWork = images[active] || [];
 
   return (
     <div id="work" className="w-dvw h-full bg-black">
@@ -44,44 +42,23 @@ const MyWork = () => {
         <div className="">
           <div className="relative grid lg:grid-rows-3 lg:grid-cols-3 grid-rows-4 lg:h-[90vh] h-full w-full gap-3">
             {selectedWork.map((img, index) => (
-              <>
-                <div key={index} className={`${index === 1 || index === 3 ? "row-span-2" : index === 2 ? "lg:row-auto row-span-2" : index === 5 ? "col-span-2" : " " } overflow-hidden`}>
-                  <img
-                    src={`${img}`}
-                    className="w-full h-full object-cover hover:scale-125 transition duration-300 ease-in-out"
-                  />
-                </div>
-                {/* <div className="overflow-hidden row-span-2">
-                  <img
-                    src={`${img1}`}
-                    className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out"
-                  />
-                </div>
-                <div className="overflow-hidden lg:row-auto row-span-2 ">
-                  <img
-                    src={`${img2}`}
-                    className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out"
-                  />
-                </div>
-                <div className="overflow-hidden row-span-2">
-                  <img
-                    src={`${img3}`}
-                    className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out"
-                  />
-                </div>
-                <div className="overflow-hidden ">
-                  <img
-                    src={`${img4}`}
-                    className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out"
-                  />
-                </div>
-                <div className="overflow-hidden col-span-2">
-                  <img
-                    src={`${img5}`}
-                    className="w-full h-full object-cover hover:scale-125 transition  duration-300 ease-in-out"
-                  />
-                </div> */}
-              </>
+              <div
+                key={index}
+                className={`${
+                  index === 1 || index === 3
+                    ? "lg:row-span-2"
+                    : index === 2
+                    ? "lg:row-auto"
+                    : index === 5
+                    ? "lg:col-span-2"
+                    : " "
+                } overflow-hidden`}
+              >
+                <img
+                  src={`${img}`}
+                  className="w-full h-full object-cover hover:scale-125 transition duration-300 ease-in-out"
+                />
+              </div>
             ))}
           </div>
         </div>
