@@ -9,7 +9,6 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-  let tl = gsap.timeline({});
 
   useGSAP(() => {
     gsap.from(".firstName", {
@@ -32,27 +31,7 @@ const Hero = () => {
       scale: 0.5,
       opacity: 0,
     });
-    tl.to(".info", {
-      y: 50,
-      opacity: 0,
-      duration:2,
-    })
-    .to(".btn", {
-      y: 50,
-      opacity: 0,
-      duration:2,
-    })
-    .to([".backText",".frontText"], {
-      y: 200,
-      duration:6,
-    });
-    ScrollTrigger.create({
-      animation: tl,
-      trigger: ".container",
-      start: "+=100 top",
-      end: "+=500 30%",
-      scrub: 1,
-    });
+
   });
 
   return (
