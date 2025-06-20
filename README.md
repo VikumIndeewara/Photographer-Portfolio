@@ -5,7 +5,6 @@ A sleek and modern photographer portfolio website built using **React**, **Vite*
 ## 🔗 Live Website
 
 [Visit the live site here](https://photographer-portfolio-git-local-changes-vkums-projects.vercel.app)  
-_Replace the above link with your actual deployed URL_
 
 ---
 
