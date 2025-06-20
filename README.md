@@ -14,10 +14,9 @@ A sleek and modern photographer portfolio website built using **React**, **Vite*
 - 🖼️ **Gallery section** with sample photographs
 - 🏠 **Home Page** with 5 curated sections
   - Hero section
-  - About/Introduction
-  - Services or Portfolio
-  - Gallery
-  - Contact/Call to Action
+  - About
+  - Work
+  - Contact
 - 📩 **Book a Session** page: prefilled email link for easy session booking
 - 📱 **Responsive Design**: Mobile-first layout for all screen sizes
 - ⚡ **Fast & Lightweight** build using Vite
