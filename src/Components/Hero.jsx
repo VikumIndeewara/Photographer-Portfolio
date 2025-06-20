@@ -4,9 +4,6 @@ import backCam from "../assets/Images/darkcam.png";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
 
